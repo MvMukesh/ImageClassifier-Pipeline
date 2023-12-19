@@ -20,7 +20,7 @@ list_of_files = [
     "params.yaml",
     "requirements.txt",
     "config/config.yaml",
-    "research/trials.ipynb", ]
+    "research_env/trials.ipynb", ]
 
 
 for filepath in list_of_files:
