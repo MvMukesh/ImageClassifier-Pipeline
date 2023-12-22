@@ -5,7 +5,8 @@
 3. Write `params.yaml` code (general parameters values)
 4. Write `entity module` code
 
-**`Getting inside src`** <br>
+**`Getting inside src`**
+
 5. Write `config` manager present in src config
 6. Write `components` one after others say (data_ingestion, model_training, model_evaluation .... so on)
 7. Write `pipeline` code
