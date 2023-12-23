@@ -5,10 +5,11 @@ import joblib
 import base64
 from typing import Any
 from pathlib import Path
+from box import ConfigBox #using for smooth dict data retrival
 from imageClassifier import logger
 from ensure import ensure_annotations #to take care functions arguments data type constraints
 from box.exceptions import BoxValueError
-from box import ConfigBox #using for smooth dict data retrival
+
 
 
 

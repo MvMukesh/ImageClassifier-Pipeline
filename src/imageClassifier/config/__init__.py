@@ -1,0 +1,1 @@
+from imageClassifier.config.configuration import ConfigurationManager
