@@ -2,8 +2,8 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/MvMukesh/datasets/blob/6e66d93549e982192b39d9fe58f89dc2ad62f9ca/image_classifier_data_v01.zip
-  local_data_file: artifacts/data_ingestion/cats_dogs_light.zip
+  source_URL: https://raw.githubusercontent.com/MvMukesh/datasets/main/image_classifier_data_v01.zip
+  local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
 
 prepare_base_model:
