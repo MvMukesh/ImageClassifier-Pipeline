@@ -11,3 +11,79 @@
 6. Write `components` one after others say (data_ingestion, model_training, model_evaluation .... so on)
 7. Write `pipeline` code
 8. Write end point code in `main.py`
+
+# Tree
+
+.
+├── artifacts
+│   └── data_ingestion
+│       ├── classifier_data_v01
+│       └── dataV01.zip
+├── config
+│   └── config.yaml
+├── LICENSE
+├── logs
+│   └── running_logs.log
+├── main.py
+├── params.yaml
+├── README.md
+├── requirements.txt
+├── research_env
+│   ├── check_baseModel_v04.ipynb
+│   ├── check_dataIngestion_v03.ipynb
+│   └── trials_n.ipynb
+├── setup.py
+├── src
+│   ├── imageClassifier
+│   │   ├── components
+│   │   │   ├── data_ingestion.py
+│   │   │   ├── __init__.py
+│   │   │   ├── modelPrep_base.py
+│   │   │   └── __pycache__
+│   │   │       ├── data_ingestion.cpython-38.pyc
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       └── modelPrep_base.cpython-38.pyc
+│   │   ├── config
+│   │   │   ├── configuration.py
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       ├── configuration.cpython-38.pyc
+│   │   │       └── __init__.cpython-38.pyc
+│   │   ├── constants
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       └── __init__.cpython-39.pyc
+│   │   ├── entity
+│   │   │   ├── config_entity.py
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       ├── config_entity.cpython-38.pyc
+│   │   │       └── __init__.cpython-38.pyc
+│   │   ├── __init__.py
+│   │   ├── pipeline
+│   │   │   ├── data_ingestion_v01.py
+│   │   │   ├── __init__.py
+│   │   │   ├── modelPrep_base_v02.py
+│   │   │   └── __pycache__
+│   │   │       ├── data_ingestion_v01.cpython-38.pyc
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       └── modelPrep_base_v02.cpython-38.pyc
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   └── __init__.cpython-39.pyc
+│   │   └── utils
+│   │       ├── common.py
+│   │       ├── __init__.py
+│   │       └── __pycache__
+│   │           ├── common.cpython-38.pyc
+│   │           ├── common.cpython-39.pyc
+│   │           ├── __init__.cpython-38.pyc
+│   │           └── __init__.cpython-39.pyc
+│   └── imageClassifier.egg-info
+│       ├── dependency_links.txt
+│       ├── PKG-INFO
+│       ├── SOURCES.txt
+│       └── top_level.txt
+├── template.py
+└── test.py
