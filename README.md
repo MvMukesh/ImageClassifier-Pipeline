@@ -13,7 +13,7 @@
 8. Write end point code in `main.py`
 
 # Tree
-
+<pre>
 .
 ├── artifacts
 │   └── data_ingestion
@@ -62,4 +62,4 @@
 │       └── top_level.txt
 ├── template.py
 └── test.py
-
+</pre>
