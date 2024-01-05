@@ -1,8 +1,10 @@
-AUGMENTATION: True
-IMAGE_SIZE: [224,224,3] #recommended size for VGG 16 model
-BATCH_SIZE: 18
-INCLUDE_TOP: False
-EPOCHS: 10 #increase it 
-CLASSES: 2
-WEIGHTS: imagenet #transferlearning, taking imagenet weights
-LEARNING_RATE: 0.01
+key: val
+
+# AUGMENTATION: True
+# IMAGE_SIZE: [224,224,3] #recommended size for VGG 16 model
+# BATCH_SIZE: 18
+# INCLUDE_TOP: False
+# EPOCHS: 10 #increase it 
+# CLASSES: 2
+# WEIGHTS: imagenet #transferlearning, taking imagenet weights
+# LEARNING_RATE: 0.01

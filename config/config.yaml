@@ -2,14 +2,14 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://raw.githubusercontent.com/MvMukesh/datasets/main/classifier_dataV01.zip
-  local_data_file: artifacts/data_ingestion/data_v01.zip
+  source_URL: https://drive.google.com/uc?id=1GTbny2lRB89MK6zLB1h2XQe16vvLvYD9 #https://github.com/MvMukesh/datasets/blob/main/classifier_data_v02.zip
+  local_data_file: artifacts/data_ingestion/dataV01.zip
   unzip_dir: artifacts/data_ingestion
 
-prepare_base_model:
-  root_dir: artifacts/prepare_base_model
-  base_model_path: artifacts/prepare_base_model/base_modelV01.h5
-  updated_base_model_path: artifacts/prepare_base_model/base_model_updatedV01.h5
+# prepare_base_model:
+#   root_dir: artifacts/prepare_base_model
+#   base_model_path: artifacts/prepare_base_model/base_modelV01.h5
+#   updated_base_model_path: artifacts/prepare_base_model/base_model_updatedV01.h5
 
 # prepare_callbacks:
 #   root_dir: artifacts/prepare_callbacks

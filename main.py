@@ -16,17 +16,17 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-#2
-STAGE_NAME = "Model Prep Base"
-try: 
-   logger.info(f"*******************")
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-   prepare_base_model = PrepareBaseModelTrainingPipeline()
-   prepare_base_model.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-except Exception as e:
-        logger.exception(e)
-        raise e
+# #2
+# STAGE_NAME = "Model Prep Base"
+# try: 
+#    logger.info(f"*******************")
+#    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+#    prepare_base_model = PrepareBaseModelTrainingPipeline()
+#    prepare_base_model.main()
+#    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+# except Exception as e:
+#         logger.exception(e)
+#         raise e
 
 #3
 # STAGE_NAME = "Training"
