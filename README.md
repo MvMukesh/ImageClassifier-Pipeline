@@ -38,48 +38,23 @@
 │   │   ├── components
 │   │   │   ├── data_ingestion.py
 │   │   │   ├── __init__.py
-│   │   │   ├── modelPrep_base.py
-│   │   │   └── __pycache__
-│   │   │       ├── data_ingestion.cpython-38.pyc
-│   │   │       ├── __init__.cpython-38.pyc
-│   │   │       └── modelPrep_base.cpython-38.pyc
+│   │   │   └── modelPrep_base.py
 │   │   ├── config
 │   │   │   ├── configuration.py
-│   │   │   ├── __init__.py
-│   │   │   └── __pycache__
-│   │   │       ├── configuration.cpython-38.pyc
-│   │   │       └── __init__.cpython-38.pyc
+│   │   │   └── __init__.py
 │   │   ├── constants
-│   │   │   ├── __init__.py
-│   │   │   └── __pycache__
-│   │   │       ├── __init__.cpython-38.pyc
-│   │   │       └── __init__.cpython-39.pyc
+│   │   │   └── __init__.py
 │   │   ├── entity
 │   │   │   ├── config_entity.py
-│   │   │   ├── __init__.py
-│   │   │   └── __pycache__
-│   │   │       ├── config_entity.cpython-38.pyc
-│   │   │       └── __init__.cpython-38.pyc
+│   │   │   └── __init__.py
 │   │   ├── __init__.py
 │   │   ├── pipeline
 │   │   │   ├── data_ingestion_v01.py
 │   │   │   ├── __init__.py
-│   │   │   ├── modelPrep_base_v02.py
-│   │   │   └── __pycache__
-│   │   │       ├── data_ingestion_v01.cpython-38.pyc
-│   │   │       ├── __init__.cpython-38.pyc
-│   │   │       └── modelPrep_base_v02.cpython-38.pyc
-│   │   ├── __pycache__
-│   │   │   ├── __init__.cpython-38.pyc
-│   │   │   └── __init__.cpython-39.pyc
+│   │   │   └── modelPrep_base_v02.py
 │   │   └── utils
 │   │       ├── common.py
-│   │       ├── __init__.py
-│   │       └── __pycache__
-│   │           ├── common.cpython-38.pyc
-│   │           ├── common.cpython-39.pyc
-│   │           ├── __init__.cpython-38.pyc
-│   │           └── __init__.cpython-39.pyc
+│   │       └── __init__.py
 │   └── imageClassifier.egg-info
 │       ├── dependency_links.txt
 │       ├── PKG-INFO
@@ -87,3 +62,4 @@
 │       └── top_level.txt
 ├── template.py
 └── test.py
+
