@@ -1,10 +1,10 @@
-key: val
+#params taken for based model
 
-# AUGMENTATION: True
-# IMAGE_SIZE: [224,224,3] #recommended size for VGG 16 model
-# BATCH_SIZE: 18
-# INCLUDE_TOP: False
-# EPOCHS: 10 #increase it 
-# CLASSES: 2
-# WEIGHTS: imagenet #transferlearning, taking imagenet weights
-# LEARNING_RATE: 0.01
+AUGMENTATION: True
+IMAGE_SIZE: [224,224,3] #recommended img size for VGG 16 model # refer --> https://keras.io/api/applications/
+BATCH_SIZE: 24
+INCLUDE_TOP: False
+EPOCHS: 10 #increase it 
+CLASSES: 2
+WEIGHTS: imagenet #transferlearning, taking imagenet weights
+LEARNING_RATE: 0.01
