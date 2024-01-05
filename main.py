@@ -1,6 +1,6 @@
 from imageClassifier import logger
 from imageClassifier.pipeline.data_ingestion_v01 import DataIngestionTrainingPipeline
-from imageClassifier.pipeline.modelPrep_base_v02 import PrepareBaseModelTrainingPipeline
+#from imageClassifier.pipeline.modelPrep_base_v02 import PrepareBaseModelTrainingPipeline
 
 
 #1
