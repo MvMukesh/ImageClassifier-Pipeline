@@ -63,3 +63,6 @@
 ├── template.py
 └── test.py
 </pre>
+
+## Logs View
+[Tensor Logs](https://github.com/MvMukesh/ImageClassifier-Pipeline/blob/main/TensorBoard.html)
