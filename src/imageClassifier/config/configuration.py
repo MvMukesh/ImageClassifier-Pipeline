@@ -2,8 +2,8 @@ import os
 from pathlib import Path
 from imageClassifier.constants import *
 from imageClassifier.utils import read_yaml, create_directories
-from imageClassifier.entity import (DataIngestionConfig,PrepareBaseModelConfig)
-#,PrepareCallbacksConfig,TrainingConfig,EvaluationConfig)
+from imageClassifier.entity import (DataIngestionConfig,PrepareBaseModelConfig,PrepareCallbacksConfig)
+#,TrainingConfig,EvaluationConfig)
 
 class ConfigurationManager:
     def __init__(self,config_filepath=CONFIG_FILE_PATH,params_filepath=PARAMS_FILE_PATH):
@@ -11,6 +11,7 @@ class ConfigurationManager:
         self.params = read_yaml(params_filepath)
         create_directories([self.config.artifacts_root])
 
+    
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
         create_directories([config.root_dir])
@@ -19,6 +20,7 @@ class ConfigurationManager:
                                                     unzip_dir=config.unzip_dir)
         return data_ingestion_config
     
+
     def get_prepare_base_model_config(self) -> PrepareBaseModelConfig:
         config = self.config.prepare_base_model
         create_directories([config.root_dir])
@@ -32,15 +34,16 @@ class ConfigurationManager:
                                                            params_classes=self.params.CLASSES)
         return prepare_base_model_config
     
-    # def get_prepare_callback_config(self) -> PrepareCallbacksConfig:
-    #     config = self.config.prepare_callbacks
-    #     model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
-    #     create_directories([Path(model_ckpt_dir),Path(config.tensorboard_root_log_dir)])
+    
+    def get_prepare_callback_config(self) -> PrepareCallbacksConfig:
+        config = self.config.prepare_callbacks
+        model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
+        create_directories([Path(model_ckpt_dir),Path(config.tensorboard_root_log_dir)])
 
-    #     prepare_callback_config = PrepareCallbacksConfig(root_dir=Path(config.root_dir),
-    #                                                      tensorboard_root_log_dir=Path(config.tensorboard_root_log_dir),
-    #                                                      checkpoint_model_filepath=Path(config.checkpoint_model_filepath))
-    #     return prepare_callback_config
+        prepare_callback_config = PrepareCallbacksConfig(root_dir=Path(config.root_dir),
+                                                         tensorboard_root_log_dir=Path(config.tensorboard_root_log_dir),
+                                                         checkpoint_model_filepath=Path(config.checkpoint_model_filepath))
+        return prepare_callback_config
     
 
 
