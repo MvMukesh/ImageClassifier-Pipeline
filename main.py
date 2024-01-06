@@ -1,6 +1,8 @@
 from imageClassifier import logger
 from imageClassifier.pipeline.data_ingestion_v01 import DataIngestionTrainingPipeline
 from imageClassifier.pipeline.modelPrep_base_v02 import PrepareBaseModelTrainingPipeline
+from imageClassifier.pipeline.training_v03 import ModelTrainingPipeline
+
 
 
 #1
@@ -29,16 +31,16 @@ except Exception as e:
         raise e
 
 #3
-# STAGE_NAME = "Training Model | Stage-3"
-# try: 
-#    logger.info(f"*******************")
-#    logger.info(f">>>>>> {STAGE_NAME} started <<<<<<")
-#    model_trainer = ModelTrainingPipeline()
-#    model_trainer.main()
-#    logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
-# except Exception as e:
-#         logger.exception(e)
-#         raise e
+STAGE_NAME = "Training Model | Stage-3"
+try: 
+   logger.info(f"*******************")
+   logger.info(f">>>>>> {STAGE_NAME} started <<<<<<")
+   model_trainer = ModelTrainingPipeline()
+   model_trainer.main()
+   logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
 
 # #4
 # STAGE_NAME = "Evaluation | Stage-4"
